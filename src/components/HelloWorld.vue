@@ -7,8 +7,8 @@
       </label>
     </li>
   </ul>
-  <p><input type="text" placeholder="todo" v-model="newItemTitle" @keyup.enter="addTodo(newItemTitle)"></p>
-  <button @click="deleteTodo()">チェック済みのTODO削除</button>
+  <p><input type="text" placeholder="todo" class="form" v-model="newItemTitle" @keyup.enter="addTodo(newItemTitle)"></p>
+  <button class="todopush" @click="deleteTodo()">チェック済みのTODO削除</button>
 
   </div>
 </template>
@@ -86,5 +86,12 @@ a {
 }
 .done {
   text-decoration: line-through;
+}
+.form,
+.todopush {
+  width: 160px;
+  appearance: none;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 </style>
