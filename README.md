@@ -1,10 +1,10 @@
-# y
+# TodoList
 
-> y
+> TodoList
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
